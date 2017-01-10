@@ -1,5 +1,5 @@
 {% extends 'blog/base.html' %}
-
+<!-- Allows the user to edit posts if they have the correct credentials (admin rights)-->
 {% block content %}
     <div class="post">
         {% if post.published_date %}
@@ -14,3 +14,4 @@
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endblock %}
+
